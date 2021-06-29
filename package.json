@@ -1,0 +1,21 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/parkoon/monorepo.git",
+  "author": "parkoon <devparkoon@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "yarn --cwd frontend start"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
